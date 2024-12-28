@@ -22,12 +22,12 @@
  * THE SOFTWARE.
  */
 import { LocaleAutocomplete } from "@crow281/mui-locale-autocomplete";
-import { useState } from "react";
+import React, { useState } from "react";
 
 /**
  * Displays LocaleAutocomplete in action.
  */
-export function LocaleAutocompleteDemo(): JSX.Element {
+export function LocaleAutocompleteDemo(): React.JSX.Element {
     //Currently selected locale.
     const [selectedLocale, setSelectedLocale] = useState("Null");
 

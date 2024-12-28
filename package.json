@@ -1,0 +1,84 @@
+{
+    "name": "@crow281/mui-locale-autocomplete",
+    "private": false,
+    "license": "MIT",
+    "version": "1.0.0",
+    "keywords": [
+        "autocomplete",
+        "i18next",
+        "locale",
+        "mui",
+        "react",
+        "widget"
+    ],
+    "description": "A widget library built over Material UI providing extensions of Autocomplete designed to support selecting a locale.",
+    "author": "crow281",
+    "contributors": [],
+    "scripts": {
+        "lint": "eslint src/",
+        "format": "prettier src/ --write",
+        "build:types": "tsc --emitDeclarationOnly",
+        "build:js": "rollup --config rollup.config.mjs",
+        "build": "npm run build:js && npm run build:types",
+        "doc": "typedoc"
+    },
+    "files": [
+        "dist",
+        "src",
+        "LICENSE",
+        "README.md"
+    ],
+    "homepage": "https://github.com/Crow281/mui-locale-autocomplete",
+    "bugs": "https://github.com/Crow281/mui-locale-autocomplete/issues",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Crow281/mui-locale-autocomplete"
+    },
+    "type": "module",
+    "sideEffects": false,
+    "exports": {
+        ".": {
+            "types": "./dist/types/index.d.ts",
+            "require": "./dist/index.cjs",
+            "import": "./dist/index.mjs"
+        }
+    },
+    "devDependencies": {
+        "@babel/core": "^7.26.0",
+        "@babel/plugin-transform-runtime": "^7.25.9",
+        "@babel/preset-env": "^7.26.0",
+        "@babel/preset-react": "^7.26.3",
+        "@babel/preset-typescript": "^7.26.0",
+        "@rollup/plugin-babel": "^6.0.4",
+        "@rollup/plugin-commonjs": "^28.0.1",
+        "@rollup/plugin-node-resolve": "^16.0.0",
+        "@trivago/prettier-plugin-sort-imports": "^5.1.0",
+        "eslint": "^9.16.0",
+        "eslint-config-prettier": "^9.1.0",
+        "eslint-plugin-react": "^7.37.2",
+        "globals": "^15.13.0",
+        "prettier-plugin-svelte": "^3.3.2",
+        "rollup": "^4.28.1",
+        "rollup-plugin-delete": "^2.1.0",
+        "rollup-plugin-includepaths": "^0.2.4",
+        "rollup-plugin-node-externals": "^8.0.0",
+        "typedoc": "^0.27.3",
+        "typescript": "^5.7.2",
+        "typescript-eslint": "^8.17.0"
+    },
+    "peerDependencies": {
+        "@emotion/react": "^11.14.0",
+        "@emotion/styled": "^11.14.0",
+        "@mui/icons-material": "^6.3.0",
+        "@mui/material": "^6.3.0",
+        "@types/react": "^19.0.2",
+        "@types/react-dom": "^19.0.2",
+        "i18next": "^24.2.0",
+        "react": "^19.0.0",
+        "react-dom": "^19.0.0",
+        "react-i18next": "^15.2.0"
+    },
+    "dependencies": {
+        "@babel/runtime": "^7.26.0"
+    }
+}

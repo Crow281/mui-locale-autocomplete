@@ -1,4 +1,4 @@
-# I18nextAutocomplete
+# LocaleAutocomplete Demo
 
 ## Introduction
 

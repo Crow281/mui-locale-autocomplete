@@ -36,9 +36,9 @@ import React from "react";
  * @returns
  * Array of tabs created from labels.
  */
-function createTabs(labels: string[]): JSX.Element[] {
+function createTabs(labels: string[]): React.JSX.Element[] {
     //Create array to hold all the tabs.
-    const tabs: JSX.Element[] = new Array(labels.length);
+    const tabs: React.JSX.Element[] = new Array(labels.length);
 
     //Create each of the tabs.
     for (let index = 0; index < labels.length; ++index) {
@@ -59,9 +59,9 @@ function createTabs(labels: string[]): JSX.Element[] {
  * Array of panels holding content for each tab.
  */
 function createPanels(
-    children: undefined | null | JSX.Element | JSX.Element[],
+    children: undefined | null | React.JSX.Element | React.JSX.Element[],
     tabIndex: number,
-): JSX.Element[] {
+): React.JSX.Element[] {
     //Return an empty array if no children.
     if (!children) {
         return [];
@@ -70,7 +70,7 @@ function createPanels(
     //If there are multiple elements.
     if (Array.isArray(children)) {
         //Create array to hold all the tab panels.
-        const panels: JSX.Element[] = new Array(children.length);
+        const panels: React.JSX.Element[] = new Array(children.length);
 
         //Create each of the panels.
         for (let index = 0; index < children.length; ++index) {
@@ -98,7 +98,7 @@ function createPanels(
 /**
  * Creates a Tab container.
  */
-export function TabView(props: TabViewProps): JSX.Element {
+export function TabView(props: TabViewProps): React.JSX.Element {
     //Fetch desired properties.
     const { labels, children } = props;
 

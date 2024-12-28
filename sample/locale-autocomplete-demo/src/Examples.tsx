@@ -22,7 +22,7 @@
  * THE SOFTWARE.
  */
 import { TabView } from "Widgets/TabView";
-import { lazy } from "react";
+import React, { lazy } from "react";
 
 //Lazy loaded examples.
 const I18nextAutocompleteExample = lazy(
@@ -35,7 +35,7 @@ const LocaleAutocompleteExample = lazy(
 /**
  * Widget containing all of the examples we want to show.
  */
-export function Examples(): JSX.Element {
+export function Examples(): React.JSX.Element {
     //List of labels for each example.
     const tabLabels = ["I18nextAutocomplete", "LocaleAutocomplete"];
 

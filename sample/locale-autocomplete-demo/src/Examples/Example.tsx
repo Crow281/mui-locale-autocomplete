@@ -57,7 +57,7 @@ function createSourceNode(sourceCode: SourceCode): React.ReactNode {
 /**
  * Displays the example and the source behind it.
  */
-export function Example(props: ExampleProps): JSX.Element {
+export function Example(props: ExampleProps): React.JSX.Element {
     //Fetch desired properties.
     const { children, sourceCode } = props;
 

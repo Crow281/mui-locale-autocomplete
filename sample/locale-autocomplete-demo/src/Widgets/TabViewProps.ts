@@ -21,6 +21,8 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
  */
+import React from "react";
+
 /**
  * Properties to customize a tab panel.
  */
@@ -33,5 +35,5 @@ export interface TabViewProps {
     /**
      * List of children to pick from.
      */
-    children?: JSX.Element | JSX.Element[];
+    children?: React.JSX.Element | React.JSX.Element[];
 }
